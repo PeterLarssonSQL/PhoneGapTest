@@ -3,18 +3,50 @@
 <head>
 <meta charset="utf-8">
 <title>Untitled Document</title>
-<link href="jquery-mobile/jquery.mobile.theme-1.0.min.css" rel="stylesheet" type="text/css">
-<link href="jquery-mobile/jquery.mobile.structure-1.0.min.css" rel="stylesheet" type="text/css">
+<link href="jquery-mobile/jquery.mobile.theme-1.1.0.min.css" rel="stylesheet" type="text/css">
+<link href="jquery-mobile/jquery.mobile.structure-1.1.0.css" rel="stylesheet" type="text/css">
+
 <script src="jquery-mobile/jquery-1.6.4.min.js" type="text/javascript"></script>
 <script src="jquery-mobile/jquery.mobile-1.0.min.js" type="text/javascript"></script>
 </head>
-
 <body>
-<div data-role="page" id="index">
-  <div data-role="header">
-    <h1>Matilda</h1>
+    <div data-role="page" id="index" data-theme="c">
+    <!--  <div data-role="header">
+        <h1>Matilda</h1>
+      </div>-->
+      <div data-role="content" style="text-align:center;background-color:#FFF">
+        <img src="matilda.png" width="208" height="201">
+        <ul data-role="listview" style="margin-top:50px">
+          <li><a href="#Login">Logga in</a></li>
+          <li><a href="#">Webhandel</a></li>
+          <li><a href="#">Matilda web</a></li>
+        </ul>
+        </div>
+        
+        <div data-role="footer" style="margin-top:250px">
+        <h5><font size="2px">Copyright FOODit Kostsystem AB 2012</font></h5>
+      </div>
+    </div>
+
+<div data-role="page" id="Login">
+    <div data-role="content">
+    
+      <div data-role="fieldcontain" style="text-align:center">
+        <img src="matilda.png" width="208" height="201" style="vertical-align:top"> <br>
+	
+    	<div style="margin-top:50px">
+            <label for="textinput">Login:</label><br>
+            <input type="text" name="textinput" id="textinput" value=""  /><br>
+    
+            <label for="textinput">Lösenord:</label><br>
+            <input type="text" name="textinput" id="textinput" value=""  />
+		</div>
+
+      </div>
+    
   </div>
-  <div data-role="content">Content</div>
-</div>
+    </div>
+
+
 </body>
 </html>
